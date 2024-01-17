@@ -1,0 +1,150 @@
+@font-face{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    src: url("../fonts/Roboto/Roboto-Thin.woff2");
+}
+
+@font-face{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    src: url("../fonts/Roboto/Roboto-Light.woff2");
+}
+@font-face{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/Roboto/Roboto-Regular.woff2");
+}
+
+
+.media(@block , @size){
+    @media(max-width :@size){
+        @block()
+    }
+}
+
+@roboto : 'Roboto' , sans-serif;
+
+
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: @roboto;
+}
+
+
+
+
+.container{
+    width: 97%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.media({
+    .container{
+        max-width: 992px;
+    }
+}, 992px);
+
+.media({
+    .container{
+        max-width: 768px;
+    }
+}, 768px);
+
+.media({
+    .container{
+        max-width: 576px;
+    }
+}, 576px);
+
+
+
+
+
+
+/* all navbars starts */
+@import url("./allNavbars.less");
+/* all navbars ends */
+
+/* main starts */
+
+/* header starts */
+@import url("./mainPage/mHeader.less");
+/* header ends */
+/* section starts */
+@import url("./mainPage/mSection.less");
+/* section ends */
+/* main starts */ 
+@import url("./mainPage/mMain.less");
+/* main ends */
+
+/* main ends */
+
+
+/* gallery starts */
+/* header only comprised of navbar and it is in the "allNavbars.less" to minimize codes */
+/* section starts */
+@import url("./gallery/gSection.less");
+/* section ends */
+/* all footers are the same and it is in the "allFooter.less" to minimize codes */
+/* gallery ends */
+
+
+
+/* projects starts */
+/* header only comprised of navbar and it is in the "allNavbars.less" to minimize codes */
+/* section starts */
+@import url("./projects/pSection.less");
+/* section ends */
+/* all footers are the same and it is in the "allFooter.less" to minimize codes */
+/* projects ends */
+
+
+
+/* project 1 starts */
+/* header only comprised of navbar and it is in the "allNavbars.less" to minimize codes */
+/* section starts */
+@import url("./projects/allProjects/p1Section.less");
+/* section ends */
+/* all footers are the same and it is in the "allFooter.less" to minimize codes */
+/* project 1 ends */
+
+
+/* certifications starts */
+/* header only comprised of navbar and it is in the "allNavbars.less" to minimize codes */
+/* section starts */
+@import url("./certifications/ceSection.less");
+/* section ends */
+/* all footers are the same and it is in the "allFooter.less" to minimize codes */
+/* certifications ends */
+
+/* contact starts */
+/* header only comprised of navbar and it is in the "allNavbars.less" to minimize codes */
+/* section starts */
+@import url("./contact/coSection.less");
+/* section ends */
+/* all footers are the same and it is in the "allFooter.less" to minimize codes */
+/* contact ends */
+
+
+
+
+/* all footers starts*/
+@import url("./allFooter.less");
+/* all footers ends*/
+
+
+/* adiitional stuff */
+.main-overflow-hidden{
+    overflow: hidden;
+}
+.relative{
+    position: relative;
+}

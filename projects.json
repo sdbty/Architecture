@@ -1,0 +1,25 @@
+{
+    "projects" :[
+        {
+            "img" : "./img/projects/image 30.png",
+            "name" : "Sample Project",
+            "aboutProject" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." ,
+            "buttonText" : "View More",
+            "linkToProject":"./projectsPages/project1.html"
+        },
+        {
+            "img" : "./img/projects/image 33.png",
+            "name" : "Sample Project 1",
+            "aboutProject" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." ,
+            "buttonText" : "View More",
+            "linkToProject":"#"
+        },
+        {
+            "img" : "./img/projects/image 32.png",
+            "name" : "Sample Project 2",
+            "aboutProject" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." ,
+            "buttonText" : "View More",
+            "linkToProject":"#"
+        }
+    ]
+}
